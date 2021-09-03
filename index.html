@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--Website Info-->
+  <title>Niger Child Mortality</title>
+  <meta name="author" content="Jayce Jie Zhang">
+  <meta name="description" content="Niger Child Mortality Data Journalism">
+  <meta name="keywords" content="Child Mortality, Prediction, Analysis">
+  <!--CSS Link & Plotly-->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js'></script>
+</head>
+
+<body>
+  <!--grid container-->
+  <div class="grid-container">
+    <div class="header">
+      <div class ="header-description"> 
+        <h1> <b> Niger:</b> Strive for Child Survival</h1>
+        <p>From a country holding the highest child mortality rate, to one of the lower amongst the Sahelian country.
+          Niger reduced the rate of under the age of five’s death down by three folds in three decades. This is a breakdown
+          of child mortality and Niger’s strategy. </p>
+      </div>
+
+    </div>
+
+    <!--Introduction-->
+    <div class="introduction">
+      <h2><b> | Child Mortality:</b> World’s ongoing issue </h2>
+      <p>Child mortality is an ongoing world problem that’s often overlooked. On average, 15,000 children below the age of five passes away each year, 45% of the death are caused by infectious diseases. It’s an enormous number of new life diminishing yearly, where the majority can be preventable with better rapid access to modern resources such as education, food, medicine, birth control, and sanitation. Below is a comparative child mortality rate graph between Niger and the world average in demonstrating the amount of children death yearly. 
+      </p> <br>
+      <div class="line-graph1" id = "line-graph1">
+        <!-- <img class = "first-line-graph" src="Assets/child-mortality-igme 2.png" alt=""/> -->
+      </div>
+    </div>
+
+    <!--Section 1: Top Child Death Causation-->
+    <div class="causation">
+      <div class="causation-description">
+        <img class = "seperator" src="Assets/Seperator.png" alt=""/>
+        <h2><b>| Top Child Mortality Causation</b></h2>
+        <p>Respiratory infection in the lungs causes inflammation in air sacs. Primarily case by bacterial infection. Particularly life-threatening to infants and children. </p>
+      </div>
+      <div class="pie-chart" id ="pie-chart">
+        <!-- <img class = "pie-graph" src="Assets/PieChart.png" alt="" width="400" height="400"/> -->
+      </div>
+      <div class="causation1">
+        <h4><b>Pneumonia & Lower Respitory Infections</b> - 15% </h4>
+        <p>Respiratory infection in the lungs causes inflammation in air sacs. Primarily case by bacterial infection. Particularly life-threatening to infants and children. </p>
+
+      </div>
+      <div class="causation2">
+        <h4><b>Preterm & Neonatal Disorder</b> - 12% </h4>
+        <p><b>Neonatal Disoder</b> is disturbance of newborn’s body funtion. <b>Premature</b> born children has higher risk of birth injuries, underdeveloped organ failures & higher chance attracting infectious diseases.</p>
+      </div>
+      <div class="causation3">
+        <h4><b>Diarrheal Diseases</b> - 10% </h4>
+        <p>Often caused by <b>virus, contaiminated foods</b>. Diarrheal disease cause frequent, loose watery stool and stomach pain. Severe causes includes dehydration and fluid loss can cause. </p>
+      </div>
+    </div>
+        <!--Section 2: Intervention Strategy-->
+
+    <div class="strategy">
+      <div class="strategy-description">
+        <img class = "seperator" src="Assets/Seperator.png" alt=""/>
+        <h2><b>| Intervention Strategies</b></h2>
+        <p>In light of having the highest child mortality in the world, Niger made major changes in health programme delivery, introduced Free Health Care Policy in 2006 as paramount in increasing the accessibility of health service to families, improved maternal coverage & child interventions. Below is the major intervention strategy that Niger government has undertaken: </p>
+      </div>
+      <div class="strategy-1">
+      <h4><b>Integrated Management of Childhood illness</b></h4>
+      <p><br>Increase medical resource and test availability. Such as malnutrition screening. Mass distribute of disease procurement: Insecticide-treated bed net (ITN) in preventing Malaria, Oral rehydration salts (ORS) to soothe diarrheal disease symptom. </p>
+    </div>
+      <div class="strategy-2">
+        <h4><b>Anternal & Neonatal Care</b></h4>
+        <p><br>Implemented ongoing maternal & child support including early & exclusive breastfeeding, a new therapeutic feeding centre for malnutrition, handout of an Antenatal Care kit that contains essential resource such as bednet, iron, medications and vaccine.</p>
+      </div>
+      <div class="strategy-3">
+        <h4><b>Immunisation Campaign</b></h4>
+        <p><br>Niger campaign has effectively reached target of provide more than 88% of children with vaccination <i>(Tetanus Toxoid, measles & DPT3Vaccination)</i>, the early intervention greatly reduced the chance of newborns impacted by infectious and other childhood diseases.</p>
+      </div>
+      <div class="strategy-4">
+        <h4><b>Trained Community Support</b></h4>
+        <p><br>Hundreds of healthcare workers were deployed for community integrated support disease treatment diarrhoea, malaria, and acute respiratory infection. Many essential family practice knowledge and training were provided at no cost: breastfeeding, use of ITN, ORS and hygienic habit.  </p>
+      </div>
+      <div class="strategy-img1">
+        <img class = "strategy-img1" src="Assets/Strategy 1.png" alt="" width="486" height="332"/>
+      </div>
+      <div class="strategy-img2">
+        <img class = "strategy-img1" src="Assets/Strategy 2.png" alt="" width="486" height="332"/>
+      </div>
+      <div class="strategy-img3">
+        <img class = "strategy-img1" src="Assets/Strategy 3.png" alt="" width="486" height="332"/>
+      </div>
+      <div class="strategy-img4">
+        <img class = "strategy-img1" src="Assets/Strategy 4.png" alt="" width="486" height="332"/>
+      </div>
+
+  <!--Section 2.1: Intervention Effectiveness-->
+      <div class="effectiveness">
+        <img class = "seperator" src="Assets/Seperator.png" alt=""/>
+        <h2><b>| Effectiveness of Intervention</b></h2> <br>
+        <h4 class="quote">“ Niger has achieved considerable success in reducing childhood mortality, attaining nearly double the average rate of reduction of countries in sub-Saharan Africa.  ”</h6>
+      <h5 class="quote-person"><i>- UNICEF. Levels and Trends in Child Mortality: Report 2015</i></h5>
+        </div>
+      <div class="human-graph">
+        <img class = "human-graph" src="Assets/human-graph.png" alt="" />
+      </div>
+      <div class="effective-description">
+        <h4><b>Great decline in Child Mortality</b></h4><br>
+      <p>Niger’s remarkable progress in addressing the main causation of child death, various highly impactful intervention provided strategic campaign, thorough cares and support, resulted in approximately 260,000 Death Adverted in just 2012.</p>
+      </div>
+    </div>
+
+      <!--Section 3: Future Envision-->
+    <div class="future">
+      <div class="future-title">
+        <img class = "seperator" src="Assets/Seperator.png" alt=""/>
+        <h2><b>| Future Envision of Nigerien Child</b></h2><br>
+        <h4><b>Predicted Nigerien Child Mortality in 2030</b></h4><br>
+      </div>
+      <div class="schema-title"id = "prediction-graph">
+      </div>
+      <div class="explanation-1" >
+        <h4><b>Sustainable Development Goal</b></h4> <br>
+        <p>Niger's ongoing participation in UN’s Sustainable Development Goals (SDGs) aims to to reduce the Child Mortality Rate below 2.5% by 2030.</p>
+        <!-- <img class = "prediction-graph" src="Assets/prediction-graph.png" alt="" /> -->
+
+      </div>
+      <div class="SDG-description">
+        <h4><b>Closing the Gap</b></h4><br>
+        <p>The prediction above shows an exponentially decreasing curve trend in Nigerien Child Mortality Rate. Despite the rapid mortality reduction over the past decades, it is still difficult to close the gap as there are many existing problems within Niger yet to be solved.   </p>
+      </div>
+
+      <!--Section 4: Conclusion-->
+      <div class="conclusion-title">
+        <img class = "seperator" src="Assets/Seperator.png" alt=""/>
+        <h2><b>Future of Nigerien Child Survival</b></h2><br>
+      </div>
+      <div class="conclusion-img">
+        <img class = "future-image" src="Assets/future-image.png" alt="" />
+      </div>
+      <div class="conclusion-description">
+        <p>Niger amends a great effort in improving coverage and access to quality healthcare for decades. Despite the plausible progress as one of struggling developing country.
+        Niger's Mortality Rate sustainability is volatile as it's a developing country that is dependant and unstable economy.
+        
+        <br><br>The sustainability of current Heath Policy & service provision is precarious increasing refugee/ fertility rate leads to excessive population growth, which places immense pressure on government on funding demand. Constant sustained food insecurity: recurrent droughts, increased food price & shortage, reduction of local supplies.
+        Unpredictable GDP growth, health system being highly donor dependant. 
+        
+        <br><br>Not only sustain the country's current progress but continuing to build and further develop interventions that take into consideration systematic challenges experienced in Niger.</p>
+        </div>
+      </div>
+  </div><!--End of grid-container-->
+
+  <footer>
+    <h7><br><b>Litreture Reference</b></h7>
+    <p>		1. Besada, D., Kerber, K., Leon, N., Sanders, D., Daviaud, E., & Rohde, S. et al. (2016). Niger’s Child Survival Success, Contributing Factors and Challenges to Sustainability: A Retrospective Analysis. PLOS ONE, 11(1), e0146945. doi: 10.1371/journal.pone.0146945 <br>
+      2. Children: improving survival and well-being. (2020). Retrieved 24 April 2021, from https://www.who.int/news-room/fact-sheets/detail/children-reducing-mortality<br>
+      3. HD, G., & RG, C. (2001). Neonatal disorders and obstetricians. Retrieved 2 May 2021, from https://pubmed.ncbi.nlm.nih.gov/11676112/<br>
+      4. Level & Trend in Child Mortality Report 2020. (2020). Retrieved 1 May 2021, from https://www.unicef.org/media/79371/file/UN-IGME-child-mortality-report-2020.pdf.pdf<br>
+      5. NIAMEY, D. (2014). Niger's "remarkable" progress in reducing child deaths. Retrieved 1 May 2021, from https://www.thenewhumanitarian.org/news/2014/02/27/niger-s-remarkable-progress-reducing-child-deaths<br>
+      6. Niger (NER) - Demographics, Health & Infant Mortality - UNICEF DATA. Retrieved 19 April 2021, from https://data.unicef.org/country/ner/<br>
+      7. Niger Child mortality rate, 1960-2020 - knoema.com. (2021). Retrieved 30 April 2021, from https://knoema.com/atlas/Niger/Child-mortality-rate<br>
+      8. Niger: Malaria and malnutrition causing unprecedented mortality rates in children under five - Niger. (2018). Retrieved 19 April 2021, from https://reliefweb.int/report/niger/niger-malaria-and-malnutrition-causing-unprecedented-mortality-rates-children-under<br>
+    Roser, M., Ritchie, H., & Dadonaite, B. (2013). Child and Infant Mortality. Retrieved 20 April 2021, from https://ourworldindata.org/child-mortality<br>
+    <br>
+    </p>
+    <h7><b>Image Reference</b></h7>
+    <p>	1. BBC. (2013). _70665264_nih [Image]. Retrieved from https://www.bbc.com/news/world-africa-24638366 <br>
+      2. OPS. (2014). New data show child mortality rates falling faster than ever [Image]. Retrieved from https://www3.paho.org/hq/index.php?option=com_content&view=article&id=9956:2014-new-data-show-child-mortality-rates-falling-faster-than-ever&Itemid=135&lang=fr <br>
+      3. UNHCR / H. Caux. (2017). A school in Niger where Nigerian refugees study alongside local children [Image]. Retrieved from https://theirworld.org/news/niger-schools-hit-by-drought-as-un-warns-of-famine-disaster<br>
+      4. UNICEF. Children in Niger [Image]. Retrieved from https://www.unicef.org/niger/children-niger<br>
+      5. UNICEF Niger/Phelps. (2021). Child and maternal health [Image]. Retrieved from https://www.unicef.org/niger/child-and-maternal-health<br>
+      6. VII, G. Migrant children expelled to Niger in growing numbers as Europe and North Africa tighten borders [Image]. Retrieved from https://www.unicef.org/press-releases/migrant-children-expelled-niger-growing-numbers-europe-and-north-africa-tighten</p>
+
+  </footer>
+  <!--Import JS-->
+  <script src="main.js"></script>
+</body>
+
+</html>

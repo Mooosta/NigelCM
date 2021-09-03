@@ -1,0 +1,352 @@
+/* Quick Comment: Ctrl + K + U/C */
+
+/* Universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Typeface Import */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+/*16px*/
+html {
+    font-size: 100%;
+}
+
+
+
+body {
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #3d3d3d;
+}
+
+p {
+    margin-bottom: 1rem;
+    margin: 0;
+    line-height: 200%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small,
+.text_small {
+    font-size: 0.8rem;
+}
+
+/* Layoutit Import */
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 700px auto auto auto auto;
+    gap: 100px 0px;
+    grid-template-areas:
+        "header header header header"
+        ". introduction introduction ."
+        ". causation causation ."
+        ". strategy strategy ."
+        ". future future .";
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . ."
+        ". header-description ."
+        ". . .";
+    grid-area: header;
+    background: url(Assets/Niger\ Child.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-description {
+    grid-area: header-description;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(192, 211, 254, 0.5);
+    padding: 40px;
+
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "intro-description"
+        "line-graph-1";
+    grid-area: introduction;
+}
+
+.intro-description {
+    grid-area: intro-description;
+}
+
+.line-graph-1 {
+    grid-area: line-graph-1;
+}
+
+/* Causation */
+.causation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 70px 0px;
+    grid-template-areas:
+        "causation-description causation-description"
+        "pie-chart causation1"
+        "pie-chart causation2"
+        "pie-chart causation3";
+    grid-area: causation;
+}
+
+.causation-description {
+    grid-area: causation-description;
+}
+
+.pie-chart {
+    grid-area: pie-chart;
+}
+
+.causation1 {
+    grid-area: causation1;
+}
+
+.causation2 {
+    grid-area: causation2;
+}
+
+.causation3 {
+    grid-area: causation3;
+}
+
+/* Strategy*/
+.strategy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 100px 0px;
+    grid-template-areas:
+        "strategy-description strategy-description"
+        "strategy-1 strategy-img1"
+        "strategy-img2 strategy-2"
+        "strategy3 strategy-img3"
+        "strategy-img4 strategy4"
+        "effectiveness effectiveness"
+        "human-graph effective-description";
+    grid-area: strategy;
+}
+
+.strategy-description {
+    grid-area: strategy-description;
+}
+
+.strategy-1,
+.strategy-2,
+.strategy-3,
+.strategy-4 {
+    background-color: rgba(192, 211, 254, 0.164);
+}
+
+.strategy-img1,
+.strategy-img2,
+.strategy-img3,
+.strategy-img4 {
+    padding: 10px;
+    background-color: rgba(192, 211, 254, 0.164);
+}
+
+
+
+.strategy-1 {
+    grid-area: strategy-1;
+    padding: 50px;
+    text-align: right;
+}
+
+.strategy-img1 {
+    grid-area: strategy-img1;
+    padding: 10px;
+}
+
+
+.strategy-2 {
+    grid-area: strategy-2;
+    padding: 50px;
+    text-align: left;
+}
+
+.strategy-img2 {
+    grid-area: strategy-img2;
+
+}
+
+
+.strategy-3 {
+    grid-area: strategy3;
+    padding: 50px;
+    text-align: right;
+}
+
+.strategy-img3 {
+    grid-area: strategy-img3;
+}
+
+.strategy-4 {
+    grid-area: strategy4;
+    padding: 50px;
+    text-align: left;
+}
+
+.strategy-img4 {
+    grid-area: strategy-img4;
+}
+
+
+/*Effectiveness*/
+.effectiveness {
+    grid-area: effectiveness;
+    background-color: white;
+}
+
+.quote {
+    padding: 30px;
+    background-color: rgba(192, 211, 254, 0.164);
+}
+
+.quote-person {
+    text-align: right;
+    margin: 0;
+    color: #959595;
+    padding: 0 30px 30px;
+    background-color: rgba(192, 211, 254, 0.164);
+}
+
+.human-graph {
+    grid-area: human-graph;
+}
+
+.effective-description {
+    grid-area: effective-description;
+}
+
+/*Future*/
+.future {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: auto 700px auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "future-title future-title"
+        "schema-title schema-title"
+        "prediction-graph SDG-description"
+        "conclusion-title conclusion-title"
+        "conclusion-img conclusion-description";
+    grid-area: future;
+}
+
+.future-title {
+    grid-area: future-title;
+}
+
+.schema-title {
+    grid-area: schema-title;
+}
+
+.explanation-1 {
+    grid-area: prediction-graph;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.SDG-description {
+    grid-area: SDG-description;
+    padding: 20px;
+}
+
+.conclusion-title {
+    grid-area: conclusion-title;
+}
+
+.conclusion-img {
+    grid-area: conclusion-img;
+}
+
+.conclusion-description {
+    grid-area: conclusion-description;
+    padding-left: 80px;
+    padding-bottom: 100px;
+}
+
+footer {
+    padding: 10px 70px 40px 200px;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(192, 211, 254, 0.164);
+    color: rgba(128, 128, 128);
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+.seperator {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 2 0px;
+}
